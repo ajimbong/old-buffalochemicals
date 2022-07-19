@@ -1,0 +1,8 @@
+---
+deployment:
+  task:
+    - export DEPLOYPATH=/home/buffalo2/public_html
+    - /bin/cp index.html $DEPLOYPATH
+    - /bin/cp -R assets $DEPLOYPATH
+    - /bin/cp -R css $DEPLOYPATH
+    - /bin/cp -R js $DEPLOYPATH

@@ -1,0 +1,253 @@
+@font-face{
+    src: url(assets/fonts/Cambria-Font-For-Windows.ttf);
+    font-family: Cambria;
+}
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap');
+@import "utils";
+
+
+header{
+    padding: 16px 0;
+    z-index: 100;
+    .container{
+        justify-content: space-between;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+    }
+    .info{
+        display: none;
+    }
+    nav{
+        display: none;
+    }
+    .logo{
+        width: 64px;
+    }
+    .harm{
+        width: 24px;
+    }
+    #lang-toggle{
+        display: flex;
+        align-items: center;
+        .globe{
+            margin-right: 16px;
+            display: none;
+        }
+    }
+    @media only screen and (min-width: 500px){
+        #lang-toggle{
+            .globe{
+                display: block;
+            }
+        }
+
+        .logo{
+            width: 128px;
+        }
+        
+    }
+    @media only screen and (min-width: 1200px){
+        padding: 0;
+        .container{
+            flex-direction: column;
+            gap: 64px;
+            padding-top: 0;
+            padding-bottom: 32px;
+        }
+        nav{
+            display: block;
+            ul{
+                display: flex;
+                gap: 64px;
+            }
+        }
+        .main{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .bottom{
+            display: flex;
+            gap: 64px;
+        }
+        .info{
+            display: flex;
+            gap: 16px;
+        }
+        .logo{
+            width: 192px;
+        }
+        .hambuger{
+            display: none;
+        }
+    }
+}
+
+footer{
+    background-color: $black-400;
+    color: $grey-300;
+    .container{
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        .join-newsletter{
+            margin-top: 1rem;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .s-info{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 2rem;
+            .socials{
+                display: flex;
+                align-items: center;
+                gap: .25rem;
+            }
+            #lang-toggle{
+                display: flex;
+                align-items: center;
+                gap: .5rem;
+            }
+        }
+
+        .info{
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            address{
+                display: flex;
+                flex-direction: column;
+                gap: .5rem;
+                span{
+                display: flex;
+                gap: .5rem;
+                }
+            }
+        }
+
+        .links{
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+
+            ul{
+                display: flex;
+                flex-direction: column;
+                gap: .5rem;
+            }
+        }
+    }
+    a{
+        color: $grey-300;
+    }
+    h5{
+        color: $white-100;
+    } 
+    .copyright{
+        border-top: 1px $grey-300 solid;
+        p{
+            text-align: center;
+            margin-top: 1rem;
+        }
+    }
+    @media only screen and (min-width: 500px){
+        .container{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+            #newsletter{
+                width: 25rem;
+                grid-column-start: 1;
+                grid-column-end: span 2;
+                .join-newsletter{
+                    margin-top: 1rem;
+                    display: flex;
+                    justify-content: space-between;
+                    gap: 2rem;
+                    input{
+                        width: 100%;
+                    }
+                }
+
+                .socials{
+                    gap: .5rem;
+                }
+                #lang-toggle{
+                    display: flex;
+                    align-items: center;
+                    gap: 1rem;
+                }
+            }
+            .copyright{
+                grid-column-start: 1;
+                grid-column-end: span 2;
+            }
+        }
+    }
+    @media only screen and (min-width: 1200px){
+        .container{
+            display: grid;
+            padding-top: 6rem;
+            padding-bottom: 2rem;
+            gap: 0 2rem;
+            grid-template-columns: .5fr 1fr 1.5fr;
+            .links{
+                order: 1;
+            }
+
+            .info{
+                order: 2;
+                gap: 2rem;
+
+                address{
+                    gap: 1rem;
+                    span{
+                        gap: 1rem;
+                    }
+                }
+            }
+            #newsletter{
+                grid-column-start: 3;
+                grid-column-end: span 2 ;
+                order: 3;
+                width: 100%;
+            }
+            .copyright{
+                margin-top: 6rem;
+                grid-column-start: 1;
+                grid-column-end: span 3;
+                order: 4;
+            }
+    
+            .links{
+                gap: .5rem;
+                ul{
+                    gap: 1rem;
+                }
+            }
+
+            .s-info{
+                .socials{
+                    margin-top: 1rem;
+                    display: flex;
+                    gap: 2rem;
+                }
+                #lang-toggle{
+                    margin-top: 1rem;
+                    display: flex;
+                    align-items: center;
+                    gap: 1rem;
+                }
+            }
+        }
+    }
+}
+
+
