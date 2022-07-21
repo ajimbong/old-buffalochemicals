@@ -1,8 +1,14 @@
+#---
+# D760nT#:6bBulQ
+# deployment:
+#   task:
+#     - export DEPLOYPATH=/home/buffalo2/public_html
+#     - /bin/cp index.html $DEPLOYPATH
+#     - /bin/cp -R assets $DEPLOYPATH
+#     - /bin/cp -R css $DEPLOYPATH
+#     - /bin/cp -R js $DEPLOYPATH
 ---
 deployment:
-  task:
-    - export DEPLOYPATH=/home/buffalo2/public_html
-    - /bin/cp index.html $DEPLOYPATH
-    - /bin/cp -R assets $DEPLOYPATH
-    - /bin/cp -R css $DEPLOYPATH
-    - /bin/cp -R js $DEPLOYPATH
+  tasks:
+    - export DEPLOYPATH=/home/buffalo2/buffalochemicals.com/website_test
+    - /bin/cp * $DEPLOYPATH
