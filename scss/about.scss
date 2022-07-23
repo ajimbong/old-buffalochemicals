@@ -1,0 +1,66 @@
+@font-face{
+    src: url(assets/fonts/Cambria-Font-For-Windows.ttf);
+    font-family: Cambria;
+}
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap');
+@import "utils";
+
+
+
+
+#next{
+    @media only screen and (min-width: 500px){}
+    @media only screen and (min-width: 1200px){}
+}
+
+main{
+    padding-top: 2rem;
+    .image{
+        display: none;
+    }
+    .content{
+        h3{
+            font-family: "Manrope", sans-serif;
+        }
+        h5{
+            font-family: "Manrope", sans-serif;
+            margin-top: .5rem;
+        }
+        p{
+            text-align: justify;
+            margin-top: .5rem;
+            margin-bottom: .4rem;
+        }
+    }
+    @media only screen and (min-width: 500px){
+        .image{
+            display: block;
+            width: 100%;
+            height: 24rem;
+            background-image: url(../assets/images/_about_mechanic.webp);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin-bottom: 2rem;
+        }
+       .content{
+           overflow: visible;
+        h5{
+            margin-top: 1rem;
+        }
+       } 
+    }
+        
+    @media only screen and (min-width: 1200px){
+        // .image{
+        //     width: 32rem;
+        //     height: 50rem;
+        //     float: left;
+        // }
+        // .content{
+        //     div{
+        //        display: contents;
+        //     }
+        // }
+    }
+}

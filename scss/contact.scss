@@ -1,0 +1,95 @@
+@font-face{
+    src: url(assets/fonts/Cambria-Font-For-Windows.ttf);
+    font-family: Cambria;
+}
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap');
+@import "utils";
+
+.contact{
+    .form{
+        width: 100%;
+        margin-top: 2rem;
+        .input{
+            border: 1px $black-100 solid;
+            border-radius: 2px;
+            width: 100%;
+        }
+        textarea{
+            resize: vertical;
+            width: 100%;
+            padding: .5rem;
+        }
+        button{
+            width: 100%;
+            margin-top: 1.5rem;
+        }
+        .intem{
+            margin-top: 1rem;
+        }
+    }
+    .info{
+        margin-top: 3rem;
+        .item{
+            display: flex;
+            gap: 1rem;
+            padding: 1rem;
+            width: 100%;
+            background-color: $white-100;
+            img{
+                width: 32px;
+            }
+            .phone{
+                width: 24px;
+            }
+            .sub-info{
+                .cap{
+                    color: $black-100;
+                }
+            }
+            .c{
+                font-size: 13px;
+            }
+        }
+        }
+
+        address{
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        @media only screen and (min-width: 500px){
+            .flex{
+                width: 100%;
+                display: flex;
+                align-items: flex-start;
+                gap: 1rem;
+                
+                div{
+                    width: 100%;
+                }
+            }
+
+        }
+
+        @media only screen and (min-width: 1200px){
+           .container{
+               display: flex;
+               gap: 6rem;
+               .form{
+                   width: 60%;
+               }
+           } 
+        }
+}
+
+
+#map{
+    margin-top: 3rem;
+
+}
+
+#next{
+    @media only screen and (min-width: 500px){}
+    @media only screen and (min-width: 1200px){}
+}

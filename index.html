@@ -6,13 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="assets/fav_ico/logo2.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/home.min.css">
     <title>Buffalo Chemicals | Car Repair Enterprise</title>
 </head>
 <body>
-    <header class="head">
+    
+    <header class="head" id="header">
         <div class="container">
-            <div class="hambuger">
+            <div id="hamburger" class="hambuger">
                 <img src="assets/icons/harm.svg" alt="">
+            </div>
+            <div class="dark-overlay"></div>
+            <div class="menu">
+                <button class="toggle" id="close">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 18L18 6M6 6L18 18" stroke="#191919" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>    
+                <nav>
+                    <ul>
+                        <li class="cap"><a href="index.html">Home</a></li>
+                        <li class="cap"><a href="products.html">Products</a></li>
+                        <li class="cap"><a href="">Tutorials</a></li>
+                        <li class="cap"><a href="about.html">About</a></li>
+                        <li class="cap"><a href="contact.html">Contact</a></li> 
+                    </ul>
+                </nav>
             </div>
             <div class="main">
                 <div class="info">
@@ -26,25 +45,27 @@
                 </div>
             </div>
             <div class="bottom">
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="products.html">Products</a></li>
-                        <li><a href="">Tutorials</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="contact.html">Contact</a></li> 
-                    </ul>
-                </nav>
-                <span id="lang-toggle"> <img src="assets/icons/globe.svg" alt="earth icon" class="globe">  
-                    <select name="language" id="lang">
-                        <option value="english">English</option>
-                        <option value="french">Français</option>
-                    </select>
-                </span>
+                <div class="container" style="padding-left: 0; padding-right: 0;">
+                    <nav class="desk-nav">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="products.html">Products</a></li>
+                            <li><a href="">Tutorials</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contact.html">Contact</a></li> 
+                        </ul>
+                    </nav>
+                    <span id="lang-toggle"> <img src="assets/icons/globe.svg" alt="earth icon" class="globe">  
+                        <select name="language" id="lang">
+                            <option value="english">English</option>
+                            <option value="french">Français</option>
+                        </select>
+                    </span>
+                </div>
             </div>
         </div>
     </header>
-
+    <div class="spacer"></div>
     <section id="hero">
         <div class="bg-dark">
         </div>
@@ -246,5 +267,7 @@
         </div>
     </div>
     </footer>
+
+    <script src="/js/main.js"></script>
 </body>
 </html>
