@@ -10,10 +10,27 @@
     <title>Contact | Buffalo Chemicals</title>
 </head>
 <body>
-    <header class="head">
+    <header class="head" id="header">
         <div class="container">
-            <div class="hambuger">
+            <div id="hamburger" class="hambuger">
                 <img src="assets/icons/harm.svg" alt="">
+            </div>
+            <div class="dark-overlay"></div>
+            <div class="menu">
+                <button class="toggle" id="close">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 18L18 6M6 6L18 18" stroke="#191919" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>    
+                <nav>
+                    <ul>
+                        <li class="cap"><a href="index.html">Home</a></li>
+                        <li class="cap"><a href="products.html">Products</a></li>
+                        <li class="cap"><a href="">Tutorials</a></li>
+                        <li class="cap"><a href="about.html">About</a></li>
+                        <li class="cap"><a href="contact.html">Contact</a></li> 
+                    </ul>
+                </nav>
             </div>
             <div class="main">
                 <div class="info">
@@ -27,24 +44,27 @@
                 </div>
             </div>
             <div class="bottom">
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="products.html">Products</a></li>
-                        <li><a href="">Tutorials</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="contact.html">Contact</a></li> 
-                    </ul>
-                </nav>
-                <span id="lang-toggle"> <img src="assets/icons/globe.svg" alt="earth icon" class="globe">  
-                    <select name="language" id="lang">
-                        <option value="english">English</option>
-                        <option value="french">Français</option>
-                    </select>
-                </span>
+                <div class="container" style="padding-left: 0; padding-right: 0;">
+                    <nav class="desk-nav">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="products.html">Products</a></li>
+                            <li><a href="">Tutorials</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contact.html">Contact</a></li> 
+                        </ul>
+                    </nav>
+                    <span id="lang-toggle"> <img src="assets/icons/globe.svg" alt="earth icon" class="globe">  
+                        <select name="language" id="lang">
+                            <option value="english">English</option>
+                            <option value="french">Français</option>
+                        </select>
+                    </span>
+                </div>
             </div>
         </div>
     </header>
+    <div class="spacer"></div>
 
     <div class="hero">
         <div class="back-drop">
@@ -99,5 +119,78 @@
             </div>
         </div>
     </main>
+
+    <footer>
+        <div>
+
+        
+        <div class="container">
+            <div id="newsletter">
+                <div>
+                    <h5 class="h5-sans"> Subscribe to our news letter</h5>
+                    <p>To stay upto date with our latest offers and have access to educative content right in our inbox.</p>
+                </div>
+                <div class="join-newsletter">
+                    <input class="input" type="text" placeholder="Email">
+                    <button class="btn-red">Join</button>
+                </div>
+                <div class="s-info">
+                    <div class="socials"> 
+                        <a href="#" target="_blank"><img src="assets/icons/footer-insta.svg" alt="instagram link" ></a>
+                        <a href="#" target="_blank"><img src="assets/icons/footer-fb.svg" alt="instagram link" ></a>
+                        <a href="#" target="_blank"><img src="assets/icons/footer-ln.svg" alt="instagram link" ></a> 
+                    </div>
+                    <div>
+                        <span id="lang-toggle"> <img src="assets/icons/footer-globe.svg" alt="language icon" class="globe">  
+                            <select class="select-dark" name="language" id="lang">
+                                <option value="english">English</option>
+                                <option value="french">Français</option>
+                            </select>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info">
+                <h5 class="h5-sans">Information</h5>
+                <address>
+                    <span>
+                        <img src="assets/icons/footer-phone.svg" alt="phone icon">
+                      <a href="tel:+237655390100">+237 655 39 01 00</a>
+                    </span>
+                    <span>
+                        <img src="assets/icons/footer-mail.svg" alt="mail icon">
+                      <a href="mailto:contact@buffalochemicals.com">contact@buffalochemicals.com</a>
+                    </span>
+                    <span>
+                        <img src="assets/icons/footer-map.svg" alt="location icon">
+                      <span>Nouvelle Route Bastos - Yde</span>
+                    </span>
+                    <span>
+                        <img src="assets/icons/footer-clock.svg" alt="clock icon">
+                      <span>8:00am - 6:00pm(mon - sat)</span>
+                    </span>
+                </address>
+            </div>
+
+            <div class="links">
+                <h5 class="h5-sans">Links</h5>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">Tutorials</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li> 
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="copyright">
+                <p class="cap">&copy; Copyright 2022 - Buffalo Chemicals</p>
+            </div>
+        </div>
+    </div>
+    </footer>
 </body>
 </html>
