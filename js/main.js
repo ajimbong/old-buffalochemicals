@@ -1,3 +1,4 @@
+// Not using this code as of the moment
 const navOpenBtn = document.getElementById('hamburger')
 const navCloseBtn = document.getElementById('close')
 

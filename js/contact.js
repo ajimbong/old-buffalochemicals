@@ -16,7 +16,7 @@ form.addEventListener('submit', e =>{
        formData.append('subject', subject.value)
        formData.append('message', message.value)
        
-          fetch('https://test.buffalochmicals.com/server/form.php', {method : 'POST', body: formData})
+          fetch('../server/form.php', {method : 'POST', body: formData})
           .then(res => res.json())
           .then(data => {
               alert(data.msg)
