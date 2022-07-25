@@ -21,7 +21,7 @@ if(isset($_POST['name']) && isset($_POST['email']) && isset($_POST['subject']) &
     echo 'Sorry, all the fields were not provided';
 }
 
-header("refresh:5;url=contact.html");
+header("refresh:3;url=../contact.html");
 
 
 //$txt = "You have received and e-mail from  $name \n\n $message";
