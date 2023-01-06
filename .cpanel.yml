@@ -10,7 +10,7 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/buffalo2/public_html
+    - export DEPLOYPATH=/home/buffalo2/buffalochemicals.com/website_test
     - /bin/cp index.html $DEPLOYPATH
     - /bin/cp contact.html $DEPLOYPATH
     - /bin/cp about.html $DEPLOYPATH
